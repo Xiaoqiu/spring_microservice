@@ -23,5 +23,6 @@ Spring Boot是一个重新构想的Spring框架。Spring Boot基于Spring，但�
 
 
 **注：**
+
 学习本教程需要一定的Spring Boot基础，若读者未接触或不熟悉，请下载根目录的“Spring Boot实战 ,丁雪丰 (译者).pdf”，然后自行学习。Spring Boot学深一点，搭建基于Spring Cloud的微服务云应用时不会太吃力。
 
