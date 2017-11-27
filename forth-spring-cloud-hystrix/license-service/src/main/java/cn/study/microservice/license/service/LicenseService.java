@@ -88,7 +88,6 @@ public class LicenseService {
                 .withComment(serviceConfig.getExampleProperty());
     }
 
-    @HystrixCommand
     public Organization getOrganization(String organizationId) {
         randomlyRunLong();
         return organizationRestClient.getOrganization(organizationId);
