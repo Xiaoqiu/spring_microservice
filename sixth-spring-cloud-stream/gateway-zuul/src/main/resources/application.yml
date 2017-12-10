@@ -1,0 +1,79 @@
+server:
+  port: 5555
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+#zuul:
+#  routes:
+#    organizationservice: /organization/**
+
+#zuul:
+#  ignored-services: 'organizationservice'
+#  routes:
+#    organizationservice: /organization/**
+
+#zuul:
+#  ignored-services: '*'
+#  routes:
+#    organizationservice: /organization/**
+
+#zuul:
+#  ignored-services: '*'
+#  routes:
+#    organizationservice: /organization/**
+#    licenseservice: /license/**
+
+#zuul:
+#  ignored-services: '*'
+#  prefix: /api
+#  routes:
+#    organizationservice: /organization/**
+#    licenseservice: /license/**
+
+#zuul:
+#  prefix: /api
+#  routes:
+#    organizationstatic:
+#      path: /organizationstatic/**
+#      url: http://localhost:11000
+
+#zuul:
+#  prefix: /api
+#  routes:
+#    organizationstatic:
+#      path: /organizationstatic/**
+#      serviceId: organizationstatic
+#    licenseservice: /license/**
+#ribbon:
+#  eureka:
+#    enabled: false
+#organizationstatic:
+#  ribbon:
+#    listOfServers: http://localhost:11000,http://localhost:11001
+
+#zuul:
+#  prefix: /api
+#  routes:
+#    organizationstatic:
+#      path: /organizationstatic/**
+#      serviceId: organizationstatic
+#    licenseservice: /license/**
+#organizationstatic:
+#  ribbon:
+#    NIWSServerListClassName: com.netflix.loadbalancer.ConfigurationBasedServerList
+#    listOfServers: http://localhost:11000,http://localhost:11001
+
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 7000
+#ribbon:
+#  ReadTimeout: 7000
