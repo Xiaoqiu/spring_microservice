@@ -1,0 +1,28 @@
+server:
+  port: 11000
+spring:
+  application:
+    name: organizationservice
+    index: ${random.int(1,65535)}
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      discovery:
+        service-id: config-server
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  security:
+    enabled: false
+endpoints:
+  refresh:
+    enabled: true
